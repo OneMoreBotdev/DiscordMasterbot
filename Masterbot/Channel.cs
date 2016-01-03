@@ -24,8 +24,7 @@ namespace Masterbot {
 
         public IEnumerable<Message> Messages => Inner.Messages.Select(m => new Message(Client, m));
 
-        public Channel(ChatClient client, Discord.Channel inner): base(client, inner) {
-        }
+        public Channel(ChatClient client, Discord.Channel inner): base(client, inner) {}
     }
 
     public enum ChannelType {
